@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Formulario</title>
+</head>
+<body>
+    
+    <a href="./index.html"> Regresar a la pagina principal</a>
+
+    <form>   <!-- ^ form: es una etiqueta que me permite tener un formulario que me permite que el usuario usuario ingrese informacion -->
+        
+       <input name="nombrePrueba" placeholder="Ej: Leonardo"/> 
+        <!-- ^ input: es una etiqueta donde me deja ingresar datos en un formulario..
+                        placeholder: pone una descripcion dentro del input, para que el usuario digite lo que se necesita..
+                        name: me permite generar una variable de ese input
+                        type: me permite cambien el tipo de input, como: numerico, fecha, texto, etc -->
+        
+        <label for="nombre">  <!-- ^ label: me permite agregar una etiqueta de texto que me visualiaza en el formulario
+                        for: me permite asignar este label a inputo que se llame igual. -->
+            Ingrese su segundo nombre
+            <input name="nombre" placeholder="Ej: Daniel">
+        </label>
+        
+        <label for="apellido">  <!-- ^ label: me permite agregar una etiqueta de texto que me visualiaza en el formulario -->
+            Ingrese su apellido
+            <input name="apellido" placeholder="Ej: Ramirez">
+        </label>
+
+        <input placeholder="0" type="number">  <!-- ^ type = number: me permite generar un tipo de input solo numerico.   -->
+
+        <input type="date">  <!-- ^ type = date: me permite generar un tipo de input solo fecha.   -->
+        
+        <input type="email">  <!-- ^ type = email: me permite generar un tipo de input solo email.   -->
+        
+        <input type="password">  <!-- ^ type = password: me permite generar un tipo de input solo password.   -->
+        
+        <input type="checkbox">  <!-- ^ type = checkbox: me permite generar un tipo de input solo checkbox, que me permite escoger varias opciones.   -->
+        
+        <input type="radio">  <!-- ^ type = radio: me permite generar un tipo de input solo radio button, que de todas las opciones solo me permite escoger una sola.   -->
+        
+        <input type="file">  <!-- ^ type = file: me permite generar un tipo de input solo file, que me permite subir un archivo.   -->
+
+        <button >Boton ejemplo</button>   <!-- ^ button: es un boton que me permite generar una determinada accion
+                                                                        type: me permite diferencuar que accion quiero para el boton -->
+        
+        <button type="submit">Enviar datos</button>  <!-- ^ type = submit: este tipo me permite enviar datos.   -->
+        
+        <button type="reset">reset</button>  <!-- ^ type = reset: este tipo me permite resetear el formulario.   -->
+
+        <br><br>
+        
+        ------------------------------------------------------------------------------------------------------------------------------------- <br>
+        <h3>Estilos In line:</h3> 
+        A cada uno de los elementos de mi pagina web sae les pone un estilo dentro de la linea, ejemplos
+        no es <br>recomendable por que nos demorariamos poniendo los estilos a cada uno de los elementos de la web.. <br>
+        -------------------------------------------------------------------------------------------------------------------------------------
+
+        <br><br>
+            
+        <button type="submit" style="color: aqua; background-color: blueviolet;">Enviar datos</button>  
+                                <!-- ^  style = color: Me cambia el color de la letra.
+                                style = background: me cambia el color de fondo del boton. -->
+          <br><br>      
+                
+        <button type="reset" style="color: cornflowerblue; background-color:dimgrey;">reset</button> 
+
+        <br><br>
+        
+    </form>
+
+</body>
+</html>
