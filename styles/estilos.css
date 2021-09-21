@@ -1,0 +1,123 @@
+/* <!-- ---------------------------- CSS ------------------------------ -->
+<link rel="stylesheet" href="./styles/estilos.css">    ^ link: para poder trabajar con estilos de css, es necesario poner la etiqueta 
+                                                                    link para poder jalar los estilos. o tambien agregar cosas adicionales 
+                                                                    a la pagna web que no tengo por defecto en este html. 
+                                                            rel:  si el archivo que queremos traer es una hoja de estilos ponemos: rel="stylesheet"
+                                                            href: me permite meter un archivo externo metido dentro de mi html en ese caso 
+                                                                    es el estilo de la carpeta de css que en esta caso  la ruta es: ./styles/estilos.css
+                                                                    
+Esto se puso en el indexCSS.html linea 9   */
+
+
+/* Selector de Etiqueta: es el selector generico que es el que me permite realizar 
+la modificacion de las etiquetas que encuentro en el html. NO SON TAN BUENOS POR QUE SON FACILES DE SOBREESCRIBIR */
+p{
+    color: red;
+}
+
+h3{
+    color: blue;
+}
+
+a{
+    background-color: darkgrey;
+}
+
+/* Selector por Id: es en la cual necesitamos realizar la modificacion no do todas la etiquetas 
+del htm, si no que me permite generar id en cada unas de la etiquetas del html y desde alli jalar 
+el stylo que quiero espacificar en cada uno de los id. ESTO ES UNA MALA PRACTICA, PORQUE LOS ID 
+SON UNICOS Y SE REALIZARIA SOLO PARA COSAS MUY ESPECIFICOS .
+Ejemplo:  en el html indexCSS.html, en el parrrafo 3 quiero que sea de otro color.
+entonces a esa linea de comando le pongo id, en la linea 86 pongo: <p id="parrafo3">
+y desde aqui le pongo el estilo que quiero para solo ese parrafo. */
+
+#parrafo3{
+    color: green;
+}
+
+
+/* Selector por Clase: es el atributo mas importante para tyener en cuenta para trabajar con estilos.
+Ejemplo: en el parrafo 1 de la pagina indexCSS.html linea 72 --> <p class="parrafoGris"> */
+
+.parrafoGris{
+    color: gray;
+}
+
+.parrafoRosado{
+    color: pink;
+}
+
+.textoRojo{
+    color: red;
+}
+
+.textoAzul{
+    color: blue;
+}
+
+.fondoRojo{
+    background-color: red;
+}
+
+.fondoAmarillo{
+    background-color: yellow;
+}
+
+.textoGrandeNegrita{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imagenPequeña{
+    height: 500px;  /* ^ height cambia al alto de la imagen y el ancho lo deja en relacion que esta la inagen */
+}
+
+.parrafoAngosto{
+    width: 500px;
+    height: 500px;
+}
+
+.bordeLimite{
+    border-color: goldenrod;
+    border-style: solid;
+}
+
+.contenedorConMargen1{
+    margin: 50px 100px 200px 10px;
+    border-color: chocolate;
+    border-style: solid;
+}
+
+.contenedorConMargen2{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-color: chocolate;
+    border-style: solid;
+}
+
+.contenedorConMargen3{
+    margin: 50px;      /* ^ margin: EXTERNO, maneja un borde externo al contenedor.  */
+    border: 2px solid red;     /* ^ border: es el borde de estylos, se maneja como los ejemplos (ver los contendores 1 - 2 - 3) */
+    padding: 10px;   /* ^ padding: INTERNO, es el margen dentro de un contenedor, tambien para que se separe de los bordes, para dar espacio */
+}
+
+.bordeSeccion{
+    border-color: grey;
+    border-style: solid;
+}
+
+.parrafoPadding{
+    margin: 100px;
+    padding: 40px;
+}
+
+/* NOTA: tener cuidado con tel tag: !important, porque cambia toda la jerarquie y no deja hacer nada, ejemplo:
+p{
+    colo:orange !important
+} 
+me cambia todos los parrafos a naranja, sin importar las otras clases que tenga el css.*/

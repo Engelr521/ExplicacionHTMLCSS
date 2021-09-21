@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------------- CSS ------------------------------ -->
+    <link rel="stylesheet" href="./styles/estilos.css">   <!-- ^ link: para poder trabajar con estilos de css, es necesario poner la etiqueta 
+                                                                        link para poder jalar los estilos. o tambien agregar cosas adicionales 
+                                                                        a la pagna web que no tengo por defecto en este html. 
+                                                                rel:  si el archivo que queremos traer es una hoja de estilos ponemos: rel="stylesheet"
+                                                                href: me permite meter un archivo externo metido dentro de mi html en ese caso 
+                                                                        es el estilo de la carpeta de css que en esta caso  la ruta es: ./styles/estilos.css  -->
+
+    <title>Mi primera pagina Web</title> <!-- ^ TiTle: Es el titulo de la pagina -->
+    <description>Esta es la descripcion de la pagina</description> <!-- ^ Description: esta es la descripcion de lo que hay en la pagina -->
+</head>
+<body> <!-- ^ Body: dentro del Body se coloca el contenido de la pagina     -->
+
+    <header> <!-- ^ Header: este es el header o encabezado de navegacion -->
+        Este es el header o encabezado de navegacion
+        <h3>Esto es una lista ordenada: </h3>
+        <ol>   <!-- ^ ol: order list, poner una lista ordenada en la pagina web  -->
+            <li>Elemento 1</li> <!-- ^ li: list item, es aqui donde se enumeran los item de cada lista. -->
+            <li class="textoGrandeNegrita textoAzul">Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ol>
+
+        <h3>Esto es una lista desordenada: </h3>
+        <ul>  <!-- ^ ul: unorder list, poner una lista desordenada en la pagina web  -->
+            <li>Elemento 1</li> <!-- ^ li: list item, es aqui donde se enumeran los item de cada lista. -->
+            <li class="textoRojo fondoAmarillo">Elemento 2</li>
+            <li class="textoAzul fondoRojo">Elemento 3</li>
+            <li class="textoGrandeNegrita">Elemento 4</li>
+            <li class="fondoAmarillo">Elemento 5</li>
+        </ul>
+
+        <div>  <!-- ^ div: es una etiqueta sola que me permite garantizar una divivion de la pagina web
+                    una seccion individual de la pagina wen, aislada del resto de cosas, se pueden poner varias cosas dentro del div -->
+            hola esto es un div, una division de pagina web
+        </div>
+
+
+    </header>
+    
+    <main> <!-- ^ Main: Esta es la pagina principal de la pagina -->
+        
+        <section>  <!-- ^ Section = Estas son las posibles secciones que puede tener l pagina, segun la estructura -->
+            
+            <h1>Esto es un titulo H1</h1>  <!-- ^ H: son etiquetas de titulos para las paginas web, y van acompañadas de un mumero, entre menos sea el numero mayor es el tamaño -->
+            <h2>Esto es un titulo H2</h2>  
+            <h3 class="textoGris">Esto es un titulo H3</h3>  
+            <h4>Esto es un titulo H4</h4>  
+            <h5>Esto es un titulo H5</h5>  
+            <h6>Esto es un titulo H6</h6>
+            
+            <a href="https://www.google.com">Este es un link externo a Google</a> <br><br>  
+            <a href="./paginatest.html">Este es un link a una link interno a una pagina de Test</a> <br><br>  
+            <a href="./formulario.html">Este es un link a una link interno a una pagina de "Formulario"</a> <br><br>  
+            <a href="https://www.google.com">  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Imagen de google"/> </a> <br>
+            <!-- ^ a: esta me permite hacer enlaces entre paginas web o a otras paginas externas a la nuestra
+                y secciones en la misma pg, como hipervinculos.
+                href: me permite poner la paginis a donde me quiero dirigir -->
+            
+
+            <Article>  <!-- ^ Article: este tag, me permite generar textos supremamente largos -->
+                
+                <h3>Parrrafo 1</h3>
+                <p class="parrafoGris parrafoAngosto bordeLimite">  <!-- ^ P: el tag P, me permite escribir parrafor dento de un article, mas de una linea, ademas deja un espacios entre cada parrafo -->
+                    Esto es mi primer parrafo de mi pagina web = Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores expedita iste odio qui consectetur velit, eius blanditiis. Iste ullam, non saepe minus quam nihil? 
+                    Ipsum autem ut quis fuga maxime!
+                </p>
+                
+                <h3>Parrrafo 2</h3>
+                <p class="parrafoRosado bordeSeccion parrafoPadding">  <!-- ^ P: el tag P, me permite escribir parrafor dento de un article, mas de una linea, ademas deja un espacios entre cada parrafo  -->
+                    Esto es mi Segundo parrafo de mi pagina web = Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores expedita iste odio qui consectetur velit, eius blanditiis. Iste ullam, non saepe minus quam nihil? 
+                    Ipsum autem ut quis fuga maxime!
+                </p>
+                
+                <h3>Parrrafo 3</h3>
+                <p id="parrafo3">  <!-- ^ P: el tag P, me permite escribir parrafor dento de un article, mas de una linea, ademas deja un espacios entre cada parrafo  -->
+                    Esto es mi Tercer parrafo de mi pagina web = Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores expedita iste odio qui consectetur velit, eius blanditiis. Iste ullam, non saepe minus quam nihil? 
+                    Ipsum autem ut quis fuga maxime!
+                </p>
+                
+                <span>  <!-- ^ span: este tag, sirve para poder textos cortos una sola linea, NO deja un espacios entre cada parrafo  -->
+                    este es un texto corto
+                </span>
+            </Article>
+            
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Imagen de google"/> <br>
+            <img class="imagenPequeña" src="./media/borderCollie.jpg" alt="Foto De Un Border Collie"/>   
+            <!-- ^ img: este no tiene un cuerpo como los demas tag, el se cierra solita, tiene dos propiedades. 
+                            src: direccion de la imagen o url. 
+                            alt: descripcion de la imagen 
+                            Nota: no utilizar fotos mayores a 100 kBytes -->
+        </section>  
+        
+        <section class="bordeSeccion">
+            <div class="contenedorConMargen1">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+        </div>
+        </section>  <!-- ^ Section = Estas son las posibles secciones que puede tener l pagina, segun la estructura -->
+    
+        <section class="bordeSeccion">
+            <div class="contenedorConMargen2">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+        </div>
+        </section>
+
+        <section class="bordeSeccion">
+            <div class="contenedorConMargen3">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+        </div>
+        </section>
+
+        
+
+    </main>
+    <footer> <!-- ^ Footer: este es el footer o pie de pagina de contacto -->
+        
+        Este es el footer o pie de página de contacto
+    </footer>
+
+</body>
+</html>
