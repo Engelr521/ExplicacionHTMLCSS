@@ -116,6 +116,37 @@ Ejemplo: en el parrafo 1 de la pagina indexCSS.html linea 72 --> <p class="parra
     padding: 40px;
 }
 
+.divTest{
+    border: 1px solid red;
+    height: 50px;
+}
+
+.contenedorDivsGrid{
+    border: 2px solid green;
+    display: grid;
+    grid-column: auto;
+    grid-template-rows: 50px 50px;
+    /* grid-template-columns: 150px 300px 150px ; */
+    grid-template-columns: 30% 40% 30%;
+    margin: 20px;
+}
+
+.contenedorDivsFlex{
+    border: 2px solid green;
+    display: flex;  /* ^ display: flex: para poder ordenar los contenidos de de los elementos dentro de la seccion.   */
+    height: 500px;  /* ^ height:: para poner un altura deontro del contenido.  */
+    justify-content: center;     /* ^ justify-content: se utiliza para poder poner los elementos en la posicion que yo quiero, ejemplo: centrado, izquierdo derecho, etc. */
+    align-items: center;    /* ^ align-items: me permite alinear los elementos de forma vertical, se pueden utilizar varios.  */
+}
+
+.contenedorDivsFlex2{
+    border: 2px solid green;
+    display: flex;  /* ^ display: flex: para poder ordenar los contenidos de de los elementos dentro de la seccion.   */
+    height: 250px;  /* ^ height:: para poner un altura deontro del contenido.  */
+    justify-content: space-around;     /* ^ justify-content: se utiliza para poder poner los elementos en la posicion que yo quiero, ejemplo: centrado, izquierdo derecho, etc. */
+    align-items: flex-end;    /* ^ align-items: me permite alinear los elementos de forma vertical, se pueden utilizar varios.  */
+}
+
 /* NOTA: tener cuidado con tel tag: !important, porque cambia toda la jerarquie y no deja hacer nada, ejemplo:
 p{
     colo:orange !important
